@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>在线问卷</title>
+    <link rel="stylesheet" href="textpage.css">
+
+</head>
+<body onload="greet()" background="./img/background/index_bg3.jpg">
+    <input type="hidden" name="beg_time">
+    <header>
+        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspTOBE_ACODER的在线问卷</p>
+    </header>
+    <form id = "form1" name="form1" method="post" action="upscore.asp">
+    
+        <article>
+            <!--<form id = "form1" name="form1" method="post" action="upscore.asp">-->
+            <div class="introduction">
+                <h1>题目简介</h1>
+                <pre>   正值北理工建校80周年之际，特设计此在线问卷以检测同学们对于母校光辉峥嵘岁月的了解程度
+                    此问卷涉及单选、多选、填空，并限制作答时间，请同学们注意
+                </pre>
+            </div>
+            <div class="text">
+                <div class="message">
+                    <div><label for="class">班级（必填）：</label><input type="text" name="class"></div>
+                    <div><label for="number">学号（必填）：</label><input type="text" name="number"></div>
+                    <div><label for="name">姓名（必填）：</label><input type="text" name="name"></div>
+                </div>
+
+                <a name="1"><h2>Ⅰ初级版本题目</h2></a>
+                <p>定向选择，选对一个得5分，选错不得分</p>
+
+                    
+                    
+                    <fieldset class ="question">
+                    <p id="1">Qeustion 1: 北理工是中国共产党创办的第几所理工科大学？</p>
+                    <label><input type="radio" name="answer1" value="5"/>1</label>
+                    <br />
+                    <label ><input type="radio" name="answer1"  value="0"/>2</label>
+                    <br/>
+                    <label ><input type="radio" name="answer1" value="0"/>3</label>
+                    </fieldset>
+
+                    
+    
+                    <fieldset class ="question">             
+                    <p id="1">Qeustion 2: 北京理工大学的前身是哪一年创立的延安自然科学院？</p>
+                    <label><input type="radio" name="answer2" value="0"/>1939</label>
+                    <br />
+                    <label ><input type="radio" name="answer2"  value="5"/>1940</label>
+                    <br/>
+                    <label ><input type="radio" name="answer2" value="0"/>1941</label>
+                    </fieldset>
+
+                    
+                    
+                    <fieldset class ="question">
+                    <p id="1">Qeustion 3: 判断：截至2018年11月，学校设有18个专业学院以及徐特立学院，开办67个本科专业？</p>
+                    <label><input type="radio" name="answer3" value="5"/>正确</label>
+                    <br />
+                    <label ><input type="radio" name="answer3"  value="0"/>错误</label>
+                    </fieldset>
+                
+
+                
+                    
+                    <fieldset class ="question">
+                    <p id="1">Qeustion 4: 判断：北京理工大学计算机学院包括软件工程、物联网工程、计算机科学与技术三个专业？</p>
+                    <label><input type="radio" name="answer4" value="0"/>正确</label>
+                    <br />
+                    <label ><input type="radio" name="answer4"  value="5"/>错误</label>
+                    </fieldset>
+
+                    
+                    
+                    <fieldset class ="question">
+                    <p id="1">Qeustion 5: 判断：北京理工大学是“理工为主，工理文协调发展”的全国重点大学,隶属于教育部？</p>
+                    <label><input type="radio" name="answer5" value="5"/>正确</label>
+                    <br />
+                    <label ><input type="radio" name="answer5"  value="0"/>错误</label>
+                    </fieldset>
+                
+                
+                <a name="2"><h2>Ⅱ中级版本题目</h2></a>
+                <p>不定项选择，选对一个选项得5分，选错扣一分</p>
+                
+                
+                    <fieldset class ="question">
+                    <p id="10">Qeustion 6: 以下几位是北理工校友的是：</p>
+                    <input type="checkbox" name="answer6" value="5"/><span id="10">李鹏</span>
+                    <br />
+                    <input type="checkbox" name="answer6"  value="5"/><span id="10">杜甫</span>
+                    <br/>
+                    <input type="checkbox" name="answer6"  value="5"/><span id="10">王小谟</span>
+                    <br/>
+                    <input type="checkbox" name="answer6"   value="-1"/><span>王小末</span>
+                    </fieldset>
+
+                
+                    <fieldset class ="question">
+                    <p id="10">Qeustion 7: 下列几项属于学校特色的是：</p>
+                    <input type="checkbox" name="answer7" value="5"/><span id="10">双一流</span>
+                    <br />
+                    <input type="checkbox" name="answer7"  value="5"/><span id="10">全国重点大学</span>
+                    <br/>
+                    <input type="checkbox" name="answer7"  value="5"/><span id="10">211工程</span>
+                    <br/>
+                    <input type="checkbox" name="answer7"   value="5"/><span>985工程</span>
+                    </fieldset>
+
+                
+                    <fieldset class ="question">
+                    <p id="10">Qeustion 8: 下列几个校区属于北京理工大学的是：</p>
+                    <input type="checkbox" name="answer8" value="5"/><span id="10">中关村校区</span>
+                    <br />
+                    <input type="checkbox" name="answer8"  value="5"/><span id="10">良乡校区</span>
+                    <br/>
+                    <input type="checkbox" name="answer8"  value="-1"/><span id="10">沙河校区</span>
+                    <br/>
+                    <input type="checkbox" name="answer8"   value="5"/><span>怀来校区</span>
+                    </fieldset>
+
+                    <a name="3"><h2>Ⅲ选择挑战题目</h2></a>
+                <p>填空题，中间不加标点不加空格，纯汉字作答，答对一题得10分，答错不扣分</p>
+                <form>
+                    <legend>请在下面的文本框中写下北理工校训</legend>
+                    <input type="text" name="Your name" οnfοcus="changeColor(this)"><br/>
+                </form>
+                <form>
+                    <legend>请在下面的文本框中写下北理工第二校训</legend>
+                    <input type="text" name="Your name" οnfοcus="changeColor(this)"><br/>
+                </form>
+                
+                <input type="hidden" name="finalscore" id="score1">
+                <br>
+                        
+            </div>
+        </article>
+        <aside>
+            <p>题目导航</p>
+            <ul>
+                <li><a href="#1">初级版本</a></li>
+                
+                
+                <li><a href="#2">中级版本</a></li>
+            
+            
+                <li><a href="#3">选择挑战</a></li>
+            
+            
+                
+                <a href="./index.html"><p>点击此处回到主页</p></a>
+                <button type="button" onclick="coreCount()">查看您的成绩</button>
+                <br>
+                <button type="button" onclick="upload();document.form1.submit();" >上传您的成绩</button>
+                <br>
+                <button type="button" onclick="window.open('scoreshow.asp')">查看历史成绩</button>
+                <br>
+                <div><label for="number">填写学号以查询成绩：</label><input type="text" name="search_number"></div>
+                <button type="button" onclick="search()">查询成绩</button>
+            
+            </ul>
+        </aside>
+    </form>
+
+
+    <script language='javascript' type='text/javascript' runat='server'>
+        function greet()
+        {
+            var h = new Date().getTime();
+            document.getElementsByName("beg_time").value = h;
+            
+            var time=new Date().getHours();
+            if(time<12)
+                alert("亲爱的北理工人，早上好");
+            else if(time<18)
+                alert("亲爱的北理工人，中午好");
+            else
+                alert("亲爱的北理工人，晚上好");
+        }
+
+        function thanks()
+        {
+            alert("Thanks for your attention.");
+        }
+        function changeColor(obj)
+        {
+            obj.style.background="powderblue";
+        }
+        function coreCount()
+        {
+            var cores=0;
+            var qestions=document.getElementsByClassName("question")
+            for(var i=0;i<qestions.length;i++)
+            {
+                var count=0;
+                var flag=1;
+                var answer=document.getElementsByName("answer"+(i+1));
+                for(var j=0;j<answer.length;j++)
+                {
+                    if(answer[j].checked)
+                    {
+                        if(answer[j].value*1<0)
+                        {
+                            flag=0;
+                            break;
+                        }
+                        else
+                            count+=answer[j].value*1;
+                    }
+                }
+                if(flag==1)
+                    cores+=count;
+            }
+
+            var h2 = new Date().getTime();
+            var all_time = (h2 - document.getElementsByName("beg_time").value);
+            all_time = all_time/1000;	
+            alert("您的答卷用时是"+all_time+"秒")
+            alert("Your score is "+cores);
+            return cores;
+        }
+        
+
+        function upload(){
+            var cores=0;
+            var qestions=document.getElementsByClassName("question")
+            for(var i=0;i<qestions.length;i++)
+            {
+                var count=0;
+                var flag=1;
+                var answer=document.getElementsByName("answer"+(i+1));
+                for(var j=0;j<answer.length;j++)
+                {
+                    if(answer[j].checked)
+                    {
+                        if(answer[j].value*1<0)
+                        {
+                            flag=0;
+                            break;
+                        }
+                        else
+                            count+=answer[j].value*1;
+                    }
+                }
+                if(flag==1)
+                    cores+=count;
+            }	
+            document.getElementById("score1").value = cores;
+            alert(cores);
+            return;
+        }
+
+        function search(){
+
+        }
+    </script>
+
+</body>

@@ -1,0 +1,94 @@
+
+.text-popup {
+    animation: textPopup 1s;
+    color: red;
+    user-select: none;
+    white-space: nowrap;
+    position: absolute;
+    z-index: 99;
+}
+@keyframes textPopup {
+    0%, 100% {
+        opacity: 0;
+    }
+    5% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-50px);    
+    }
+}
+
+body{
+    
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+}
+.flex__container {
+    display: inline-flex;
+
+
+    
+}
+.themetitle{
+    text-align: center;
+    text-shadow: 0ch;
+    text-decoration:solid;
+    font-weight: 700;
+    font-size: xxx-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+}
+.div_1{
+    position:absolute;
+    top:70%;
+    left:10%;
+}
+
+.div_2{
+    position:absolute;
+    top:70%;
+    left:50%;
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+
+.div_3{
+    position:absolute;
+    top:70%;
+    left:80%;
+}
+
+footer{
+    position:absolute;
+    top:95%;
+    left:50%;
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+
+article p{
+    font-family: "方正舒体";
+    font-weight: bold;
+    font-size: x-large;
+}
+
+

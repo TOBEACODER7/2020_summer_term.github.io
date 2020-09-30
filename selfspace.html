@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>个人空间</title>
+    <link rel="stylesheet" href="selfspace.css">
+
+</head>
+
+<body background="./img/background/index_bg2.jpg">
+    <header>
+        <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspTOBE_ACODER的个人空间</p>
+    </header>
+    <aside>
+        <p>先带你看看这页有啥</p>
+        <ul>
+            <li><a href="#1">大致信息<a></a></li>
+            
+            <img src="./img/icon/耳机.png">
+            
+            <li><a href="#2">喜好相关</a></li>
+          
+            <img src="./img/icon/手机.png">
+           
+            <li><a href="#3">心情表现</a></li>
+           
+            <img src="./img/icon/笔记本电脑1.png">
+           
+            <li><a href="#4">展望未来</a></li>
+            <a href="./index.html"><p>点击此处回到主页</p></a>
+        </ul>
+    </aside>
+
+    <article>
+        <div class="basic">
+            <a name="1"><h2>①基本情况介绍</h2></a>
+            <table border="2">
+                <tr>
+                    <td>姓名</td>
+                    <td>杨汶锦</td>
+                    <td>性别</td>
+                    <td>男</td>
+                </tr>
+                <tr>
+                    <td>年龄</td>
+                    <td>19</td>
+                    <td>生日</td>
+                    <td>2000.12.24</td>
+                </tr>
+                <tr>
+                    <td>家乡</td>
+                    <td>陕西</td>
+                    <td>专业</td>
+                    <td>计科</td>
+                </tr>
+            </table>
+        </div>
+        <div class="favor">
+            <a name="2"><h2>②个人喜好介绍</h2></a>
+            <br>
+            <h4>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp最爱的音乐(鼠标放置图片上即停止滑动)</h4>
+            <br>
+            <MARQUEE onmouseover=stop() onmouseout=start() scrollAmount=5 loop=infinite deplay="0"><IMG src="./img/selfspace_img/song1.jpg" height="500em" width="500em"><IMG src="./img/selfspace_img/song2.jpg" height="500em" width="500em"><img src="./img/selfspace_img/song3.jpg" height="500em" width="500em"><img src="./img/selfspace_img/song4.jpg" height="500em" width="500em"></MARQUEE>
+            <h4>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp最爱的电影</h4>
+            <ul class="movie">
+                <li>看不见的客人</li>
+                <li>中国合伙人</li>
+                <li>人生删除事务所</li>
+            </ul>
+            <br>
+            <a name="3"><h2>③我的心情</h2></a>
+            <br>
+            <div class = "feeling">
+                <button onclick = "happy()">点击查看开心时的我</button>
+                <img id = "placeholder" src = "img/selfspace_img/空白图片.png" border="1px" width="300em" height="300em">
+                <button onclick = "sad()">点击查看难过时的我</button>
+            </div>
+        </div>
+
+        <div class="future">
+            <a name="4"><h2>④我的未来规划</h2></a>
+            <pre>TOBE_ACODER ON THE WAY</pre>
+            <pre>TO BE A CODER!</pre>
+        </div>
+
+    </article>
+    
+    <script>
+        function happy(){
+            document.getElementById('placeholder').src="img/selfspace_img/happy.jpg";
+        }
+
+        function sad(){
+            document.getElementById('placeholder').src="img/selfspace_img/sad.jpg";
+        }
+    </script>
+</body>
+</html>

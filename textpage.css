@@ -1,0 +1,83 @@
+body{
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+aside p{
+    text-align: center;
+    font-size: x-large;
+    font-family: "华文琥珀";
+    text-emphasis-color: #000000;
+}
+aside{
+    background-color: #70adb5;
+    border: 1px solid #000;
+    border-radius: 20px;
+    margin: 0em;
+    width: 20em;
+    position: fixed; top:0px; left:0px;
+    height: 100%;
+
+}
+aside ul li{
+    background-color: #407088;
+    border: 1px solid #000;
+    border-radius: 20px;
+    margin: 2em;
+    width: 10em;
+    padding: 5px;
+    list-style-type:none;
+    text-align: center;
+}
+aside ul li a{
+    text-decoration:none; 
+
+}
+aside ul li a:hover{ background:#01F; color:#FFF } 
+aside button{
+    background-color: #407088;
+    border: 1px solid #000;
+    border-radius: 20px;
+    margin: 2em;
+    width: 10em;
+    padding: 5px;
+    list-style-type:none;
+    text-align: center;
+}
+header{
+    background-color:#FFFFFF;
+    opacity:0.3;
+    position: relative;top:0px;left:22em;
+    border: 1px solid #000;
+    border-radius: 20px;
+    width: 60em;
+    
+}
+
+header p{
+    font-size: xx-large;
+    font-family:"华文行楷" ;
+}
+.introduction{
+    background-color:#FFFFFF;
+    opacity:0.3;
+    position: relative;top:0px;left:22em;
+    border: 1px solid #000;
+    border-radius: 20px;
+    width: 60em;
+}
+
+.introduction pre{
+    font-size: large;
+    font-family:"华文行楷" ;
+}
+
+.text{
+    background-color:#FFFFFF;
+    opacity:0.3;
+    position: relative;top:0px;left:22em;
+    border: 1px solid #000;
+    border-radius: 20px;
+    width: 60em;
+}
